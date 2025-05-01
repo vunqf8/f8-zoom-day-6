@@ -269,5 +269,137 @@ body {
 .container-cv .wrapper .main .education b {
   font-weight: 600;
 }
-
 /* END: CV */
+
+/* START: Pricing Table Flex */
+.pricing-table {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e2d8f7, #f3effb, #f7f4fb);
+}
+
+.pricing-table .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.pricing-table .container .box {
+  /* Display & Box Model */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  margin-top: 5rem;
+  padding: 10px 40px;
+  border: 3px solid transparent;
+  border-radius: 20px;
+  gap: 2rem;
+
+  /* Color */
+  background: #f5f5f5;
+
+  /* Text */
+  text-align: center;
+  transition: transform 0.4s ease-out;
+
+  /* Other */
+  box-shadow: 2px -1px 19px 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px -1px 19px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px -1px 19px 3px rgba(0, 0, 0, 0.5);
+}
+.pricing-table .container .box:last-child {
+  margin-right: 0;
+}
+
+.pricing-table .container .box:hover {
+  border: 3px solid #008dff;
+  box-shadow: -1px 1px 34px 9px rgba(9, 30, 113, 0.4);
+  -webkit-box-shadow: -1px 1px 34px 9px rgba(9, 30, 113, 0.4);
+  -moz-box-shadow: -1px 1px 34px 9px rgba(9, 30, 113, 0.4);
+  transform: translateY(-1rem);
+  cursor: pointer;
+}
+
+.pricing-table .container .box:nth-child(2) {
+  border: 3px solid #008dff;
+
+  background: #091e71;
+  color: #f5f5f5;
+  transform: translateY(-1rem);
+  box-shadow: -1px 1px 34px 9px rgba(9, 30, 113, 0.4);
+  -webkit-box-shadow: -1px 1px 34px 9px rgba(9, 30, 113, 0.4);
+  -moz-box-shadow: -1px 1px 34px 9px rgba(9, 30, 113, 0.4);
+}
+
+.pricing-table .container .box:nth-child(2) h1::after {
+  content: "Best Value";
+  /* Display & Box Model */
+  margin-left: 8px;
+  padding: 4px 8px;
+  border-radius: 12px;
+
+  /* Color */
+  background: #fff754;
+  color: #c69427;
+
+  /* Text */
+  font-size: 10px;
+  text-align: center;
+}
+
+.pricing-table .container .box h1 {
+  /* Display & Box Model */
+  margin-block: 20px;
+
+  /* Text */
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pricing-table .container .box .price {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.pricing-table .container .box h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.pricing-table .container .box .check-list {
+  text-align: left;
+}
+
+.pricing-table .container .box .check-list .check-list-item {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.pricing-table .container .box .check-list .check-list-item::before {
+  content: "✓";
+  margin-right: 8px;
+}
+
+.pricing-table .container .box button {
+  /* Display & Box Model */
+  width: 100%;
+  padding-block: 14px;
+  margin-block: 20px;
+  border: none;
+  border-radius: 50px;
+
+  /* Color */
+  background: #008dff;
+  color: #f5f5f5;
+
+  /* Text */
+  font-size: 16px;
+
+  /* Other */
+  cursor: pointer;
+}
+/* END: Pricing Table Flex */
