@@ -650,5 +650,174 @@ body {
   i {
   color: #ffb200;
 }
-
 /* END: Product List */
+
+/* START: Register Layout */
+.container-register {
+  max-width: 1200px;
+  width: 100%;
+  height: 700px;
+  margin: 4rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-register img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 2;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.container-register .wrapper {
+  padding: 0 3rem;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: -24px 36px 86px 31px rgba(0, 0, 0, 0.3);
+
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.container-register .wrapper h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.container-register .wrapper p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.container-register .wrapper form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.container-register .wrapper form .form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 44px;
+}
+
+.container-register .wrapper form .form-group input {
+  padding: 0.7rem 1.3rem;
+  border: 1px solid #000;
+  font-size: 1rem;
+  transition: all 0.2s linear;
+  outline: none;
+  border-radius: 0.4rem;
+}
+
+.container-register .wrapper form .form-group input:focus {
+  border: 2px solid #00ff33;
+}
+
+.container-register .wrapper form .form-group input::placeholder {
+  color: transparent;
+}
+
+.container-register .wrapper form .form-group label {
+  position: absolute;
+  pointer-events: none;
+  top: calc(50% - 12px);
+  left: 1rem;
+  font-size: 1rem;
+  transition: all 0.2s linear;
+  padding: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.container-register .wrapper form .form-group input:required:invalid + label {
+  color: var(--text-color);
+}
+.container-register .wrapper form .form-group input:focus:required:invalid {
+  border: 2px solid #ff1443;
+}
+
+.container-register .wrapper form .form-group input:focus + label,
+.container-register
+  .wrapper
+  form
+  .form-group
+  input:not(:placeholder-shown)
+  + label {
+  top: -12px;
+  font-size: 0.8rem;
+  color: #00ff33;
+}
+
+.container-register .wrapper form .checkbox {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.container-register .wrapper form .checkbox label {
+  cursor: pointer;
+}
+
+.container-register .wrapper form .checkbox input {
+  width: 20px;
+  height: 20px;
+}
+
+.container-register .wrapper form button,
+.container-register .wrapper .register-with button {
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: #357bf5;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-register .wrapper .or {
+  margin-block: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.container-register .wrapper .register-with {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.8rem;
+}
+.container-register .wrapper .register-with button {
+}
+
+.container-register .wrapper .register-with .facebook {
+  background-color: #405992;
+}
+
+.container-register .wrapper .register-with .twitter {
+  background-color: #4ba1ea;
+}
+
+.container-register .wrapper .register-with .google {
+  background-color: #d85041;
+}
+
+/* END: Register Layout */
